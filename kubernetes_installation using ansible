@@ -134,8 +134,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 Phase 5: Install Calico
 
 On master:
-
-kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/master/manifests/calico.yaml
+kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.28.2/manifests/calico.yaml
 Phase 6: Join Workers
 
 Run the kubeadm join ... command that kubeadm generated on:
